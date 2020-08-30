@@ -3,6 +3,13 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+* walld_stuff
+pics/
+docker-compose.override.yml
+
+
+.idea/
+
 # C extensions
 *.so
 
