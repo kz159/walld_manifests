@@ -16,5 +16,6 @@ serv:
 	docker-compose down 2> /dev/null
 	docker-compose pull
 	docker-compose up -d
+	docker-compose logs -f
 
 all: db serv
