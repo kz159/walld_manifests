@@ -5,7 +5,7 @@ __pycache__/
 
 * walld_stuff
 pics/
-docker-compose.override.yml
+docker-compose.*.yml
 
 
 .idea/
