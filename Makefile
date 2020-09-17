@@ -12,10 +12,14 @@ db:
 	rm -rf ../$(DB_SOURCE)/alembic/versions/* #  This is because we are not in prod and things WILL change!
 	cd ../$(DB_SOURCE) && alembic revision --autogenerate -m "first"
 	cd ../$(DB_SOURCE) && alembic upgrade head
+
 serv:
 	docker-compose down 2> /dev/null
 	docker-compose pull
 	docker-compose up -d
+
+logs:
 	docker-compose logs -f
 
-all: db serv
+
+all: db serv logs

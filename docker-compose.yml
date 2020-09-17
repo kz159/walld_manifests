@@ -26,13 +26,14 @@ services:
     environment:
     - RMQ_HOST=rmq
     - DB_HOST=172.17.0.1
+    - TG_TOKEN= YOUR_TG_TOKEN_HERE
 
   aku_aku: 
-    image: kz159/walld_aku_aku
+    image: kz159/walld_aku_aku:latest
     environment:
     - RMQ_HOST=rmq
     - DB_HOST=172.17.0.1
-    - PIC_URL=192.168.1.6
+    - PIC_URL= YOUR_DOMAIN
     depends_on:
       - rmq
     volumes:
